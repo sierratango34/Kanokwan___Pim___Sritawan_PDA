@@ -1,18 +1,64 @@
+# I.T.4
+
+
+food_array = ["milk", "cheese", "lamb", "chicken", "pork", "beef", "potato", "kale", "carrot"]
+
+p food_array
+puts ""
+puts ""
+p food_array.sort
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #I.T.6
 
-@drinks = {
-  gin: "Edinburgh Gin",
-  vodka: "Smirnoff",
-  beer: "Brewdog",
-  whisky: "The Famous Grouse"
-}
-
-def find_gin
-  return @drinks[:gin]
-end
-
-p find_gin
-
+# @drinks = {
+#   gin: "Edinburgh Gin",
+#   vodka: "Smirnoff",
+#   beer: "Brewdog",
+#   whisky: "The Famous Grouse"
+# }
+#
+# def find_gin
+#   return @drinks[:gin]
+# end
+#
+# p find_gin
+#
 
 
 
