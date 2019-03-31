@@ -12,7 +12,6 @@ require_relative('card.rb')
 class CardGame
 
 # checkforAce should have underscores, such as 'check_for_Ace' for clarity purposes
-  def checkforAce(card) 
     if card.value = 1 # There should be a double equals sign - '==' - instead of a single equals sign
       return true
     else
