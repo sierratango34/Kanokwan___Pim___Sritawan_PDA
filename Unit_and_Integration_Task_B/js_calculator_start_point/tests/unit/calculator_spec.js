@@ -41,4 +41,16 @@ describe("calculator", function() {
     expected = calculator.runningTotal;
     assert.equal(3, expected);
   });
+
+  it("it should be able to clear the screen", function() {
+    calculator.numberClick(2);
+    calculator.operatorClick("+");
+    calculator.add(2);
+    expected = calculator.runningTotal;
+    assert.equal(4, expected);
+
+    calculator.clearClick();
+    expected = 0;
+    assert.equal(calculator.runningTotal, expected);
+  });
 });
