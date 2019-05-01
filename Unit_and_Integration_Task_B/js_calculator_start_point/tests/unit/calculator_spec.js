@@ -6,7 +6,7 @@ describe("calculator", function() {
     calculator = new Calculator();
   });
 
-  it("it has a sample test", function() {
+  xit("it has a sample test", function() {
     assert.equal(true, true);
   });
 
@@ -32,5 +32,13 @@ describe("calculator", function() {
     calculator.multiply(5);
     expected = calculator.runningTotal;
     assert.equal(15, expected);
+  });
+
+  it("it can divide numbers", function() {
+    calculator.numberClick(21);
+    calculator.operatorClick("/");
+    calculator.divide(7);
+    expected = calculator.runningTotal;
+    assert.equal(3, expected);
   });
 });
