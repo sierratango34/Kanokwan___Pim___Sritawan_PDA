@@ -17,4 +17,12 @@ describe("calculator", function() {
     expected = calculator.runningTotal;
     assert.equal(5, expected);
   });
+
+  it("it can subtract numbers", function() {
+    calculator.numberClick(7);
+    calculator.operatorClick("-");
+    calculator.subtract(4);
+    expected = calculator.runningTotal;
+    assert.equal(3, expected);
+  });
 });
