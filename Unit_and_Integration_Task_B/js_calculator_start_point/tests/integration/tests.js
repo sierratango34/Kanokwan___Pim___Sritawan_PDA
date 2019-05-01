@@ -26,4 +26,16 @@ describe("calculator functionality", function() {
 
     expect(running_total.getAttribute("value")).to.eventually.equal("10");
   });
+
+  it("multiple operations be chained together", function() {
+    running_total = element(by.css("#running_total"));
+    element(by.css("#number2")).click();
+    element(by.css("#operator_add")).click();
+    element(by.css("#number8")).click();
+    element(by.css("#operator_multiply")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#operator_equals")).click();
+
+    expect(running_total.getAttribute("value")).to.eventually.equal("90");
+  });
 });
