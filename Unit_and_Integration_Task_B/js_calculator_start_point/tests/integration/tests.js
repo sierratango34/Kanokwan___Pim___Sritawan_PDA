@@ -65,4 +65,25 @@ describe("calculator functionality", function() {
     element(by.css("#operator_equals")).click();
     expect(running_total.getAttribute("value")).to.eventually.equal("2.5");
   });
+
+  it("display a very large number", function() {
+    running_total = element(by.css("#running_total"));
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    element(by.css("#number9")).click();
+    expect(running_total.getAttribute("value")).to.eventually.equal(
+      "99999999999999"
+    );
+  });
 });
