@@ -25,4 +25,12 @@ describe("calculator", function() {
     expected = calculator.runningTotal;
     assert.equal(3, expected);
   });
+
+  it("it can multiply numbers", function() {
+    calculator.numberClick(3);
+    calculator.operatorClick("*");
+    calculator.multiply(5);
+    expected = calculator.runningTotal;
+    assert.equal(15, expected);
+  });
 });
