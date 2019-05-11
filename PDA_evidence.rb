@@ -3,10 +3,15 @@
 
 food_array = ["milk", "cheese", "lamb", "chicken", "pork", "beef", "potato", "kale", "carrot"]
 
+
+def sort_array(array)
+  return array.sort
+end
+
 p food_array
 puts ""
 puts ""
-p food_array.sort
+p sort_array(food_array)
 
 
 
